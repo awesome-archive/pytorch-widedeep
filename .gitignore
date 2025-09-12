@@ -4,17 +4,69 @@ dist/
 __pycache__*
 *.pyc
 *.pyo
+*.key
 *.egg-info
 
 # jupyter / ipython
 .ipynb_checkpoints
 Untitled*.ipynb
-data/
-model_weights/
 
-# tests
+# sublime debugger
+*.sublime-project
+*.sublime-workspace
+
+# data related dirs
+tmp_data/
+tmp_dir/
+fake_data/
+weights/
+pretrained_weights/
+model_weights/
+prepared_data/
+
+# Unit Tests/Coverage
 .coverage
+.coverage.*
+coverage.xml
+*.cover
+htmlcov*/
+.pytest_cache
+.cache
+.hypothesis/
+
+# vscode
+.vscode
 
 # sublime
 *.sublime-workspace
 sftp*-config.json
+
+# misc
+.DS_store
+
+#mypy
+.mypy_cache
+
+# Documentation
+_build
+mkdocs/site
+mkdocs/_build
+
+# _static
+_templates
+
+# test checkpoints
+checkpoints
+
+# wnb
+wandb/
+wandb_api.key
+
+# pytest
+pytest.ini
+
+# code style
+code_style.sh
+
+# isort
+.isort.cfg

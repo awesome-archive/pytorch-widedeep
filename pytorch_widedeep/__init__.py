@@ -3,12 +3,15 @@
 ##################################################
 import os.path
 
+###############################################################
+# utils module accessible directly from pytorch-widedeep.<util>
+##############################################################
+from pytorch_widedeep.utils import (
+    text_utils,
+    image_utils,
+    deeptabular_utils,
+    fastai_transforms,
+)
+from pytorch_widedeep.tab2vec import Tab2Vec
 from pytorch_widedeep.version import __version__
-
-##################################################
-# utils module accessible from pytorch-widedeep
-##################################################
-from .utils import dense_utils
-from .utils import text_utils
-from .utils import fastai_transforms
-from .utils import image_utils
+from pytorch_widedeep.training import Trainer, BayesianTrainer
